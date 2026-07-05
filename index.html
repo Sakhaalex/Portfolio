@@ -3,13 +3,17 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Alex Virendra Sakha engineering portfolio and journal.">
+    <meta name="description" content="Alex Virendra Sakha personal portfolio and reference site.">
     <meta name="color-scheme" content="light">
-    <title>Alex Virendra Sakha | Engineering Portfolio</title>
+    <title>Alex Virendra Sakha | Portfolio</title>
     <link rel="stylesheet" href="assets/css/styles.css">
     <script src="assets/js/main.js" defer></script>
   </head>
   <body>
+    <div class="cursor-glow" aria-hidden="true"></div>
+    <div class="site-progress" aria-hidden="true">
+      <span class="site-progress-bar"></span>
+    </div>
     <a class="skip-link" href="#main">Skip to content</a>
 
     <header class="site-header" data-site-header>
@@ -26,7 +30,8 @@
         </button>
 
         <nav class="site-nav" id="site-navigation" aria-label="Primary navigation" data-site-nav>
-          <a href="#about">About</a>
+          <span class="nav-indicator" aria-hidden="true"></span>
+          <a href="#top">Dossier</a>
           <a href="#education">Education</a>
           <a href="#projects">Projects</a>
           <a href="#skills">Skills</a>
@@ -38,292 +43,391 @@
     </header>
 
     <main id="main" tabindex="-1">
-      <section class="resume-hero" id="top" aria-labelledby="intro-title">
-        <div class="layout resume-grid">
-          <div class="resume-primary">
-            <p class="section-kicker">Engineering Website · Version 0.2</p>
-            <h1 id="intro-title">Alex Virendra Sakha</h1>
-            <p class="lead">
-              Engineering student building a portfolio that begins as a clear resume and grows into a long-term
-              engineering journal.
-            </p>
-            <div class="hero-actions" aria-label="Primary links">
-              <a class="button button-primary" href="#education">View education</a>
-              <a class="button button-secondary" href="#contact">Contact</a>
+
+      <!-- ============================================================
+           SECTION 1 — ENGINEERING DOSSIER COVER
+           Orange background · Full viewport height
+           ============================================================ -->
+      <section class="chapter chapter-dossier" id="top" aria-labelledby="dossier-title">
+        <div class="layout dossier-grid">
+          <div class="dossier-primary">
+            <p class="dossier-kicker">Portfolio Dossier · Version 0.3</p>
+            <h1 id="dossier-title">Alex Virendra Sakha</h1>
+            <p class="dossier-role">Electronics &amp; Telecommunication Engineer</p>
+            <div class="info-strip" aria-label="Contact information">
+              <a class="info-block" href="tel:+0000000000">
+                <span>Phone</span>
+                <!-- PHONE -->
+              </a>
+              <a class="info-block" href="mailto:alexvsakha@gmail.com">
+                <span>Email</span>
+                <!-- EMAIL -->
+              </a>
+              <a class="info-block" href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">
+                <span>LinkedIn</span>
+                <!-- LINKEDIN -->
+              </a>
+              <a class="info-block" href="https://github.com/Sakhaalex" target="_blank" rel="noopener noreferrer">
+                <span>GitHub</span>
+                <!-- GITHUB -->
+              </a>
+              <a class="info-block info-block--resume" href="assets/resume/resume.pdf" data-resume-link>
+                <span>Resume</span>
+                <!-- RESUME -->
+              </a>
             </div>
+
+            <p class="dossier-summary">
+              Graduate focused on systems, security, networking, and embedded work.
+              Interested in reliable implementation, careful problem solving, and clear documentation.
+            </p>
+
+            <div class="dossier-focus">
+              <h2 class="focus-label">Current Focus</h2>
+              <ul class="focus-tags">
+                <li>Cybersecurity</li>
+                <li>Networking</li>
+                <li>Embedded Systems</li>
+                <li>Automation</li>
+                <li>Documentation</li>
+              </ul>
+            </div>
+
+            <p class="dossier-quote">Simple is Unique.</p>
           </div>
 
-          <aside class="resume-card profile-summary" aria-label="Profile summary">
-            <div class="profile-photo-frame" data-profile-frame hidden>
-              <img src="assets/images/profile.webp" alt="Professional portrait of Alex Virendra Sakha" data-profile-photo>
+          <aside class="dossier-portrait" aria-label="Professional portrait">
+            <div class="portrait-frame" data-profile-frame>
+              <img src="assets/images/profile.webp" alt="Portrait of Alex Virendra Sakha" data-profile-photo data-asset-check>
+              <div class="portrait-placeholder" data-portrait-placeholder>
+                <span>Portrait Pending</span>
+              </div>
             </div>
-            <dl class="resume-facts">
-              <div>
-                <dt>Full Name</dt>
-                <dd>Alex Virendra Sakha</dd>
-              </div>
-              <div>
-                <dt>Current Graduation</dt>
-                <dd>Engineering · SGPA consistently above SPPU First Class with Distinction threshold</dd>
-              </div>
-              <div>
-                <dt>Technical Interests</dt>
-                <dd>Engineering systems, embedded thinking, cybersecurity, networking, and technical writing</dd>
-              </div>
-            </dl>
           </aside>
         </div>
-      </section>
 
-      <section class="content-section" id="about" aria-labelledby="about-title">
-        <div class="layout section-layout">
-          <div class="section-heading">
-            <p class="section-kicker">About</p>
-            <h2 id="about-title">Career objective and resume snapshot.</h2>
-          </div>
-          <div class="section-body resume-snapshot">
-            <p>
-              To keep improving as an engineer through disciplined project work, strong fundamentals, and practical
-              systems thinking while documenting the learning process in public.
-            </p>
-            <div class="fact-grid" aria-label="Resume facts">
-              <article>
-                <h3>Education</h3>
-                <p>School academics near 90% across 8th, 9th, 10th, 11th, and 12th; engineering SGPA remains above the SPPU distinction benchmark.</p>
-              </article>
-              <article>
-                <h3>Internship</h3>
-                <p>Resume detail required.</p>
-              </article>
-              <article>
-                <h3>Achievements</h3>
-                <p>Resume detail required.</p>
-              </article>
-              <article>
-                <h3>Certificates</h3>
-                <p>Resume detail required.</p>
-              </article>
-            </div>
-          </div>
+        <div class="chapter-divider" aria-hidden="true">
+          <span></span>
+          <span></span>
+          <span></span>
         </div>
       </section>
 
-      <section class="content-section education-section" id="education" aria-labelledby="education-title">
-        <div class="layout section-layout">
-          <div class="section-heading">
-            <p class="section-kicker">Education</p>
-            <h2 id="education-title">Academic consistency dashboard.</h2>
+      <!-- ============================================================
+           SECTION 2 — EDUCATION DASHBOARD
+           White background · Full viewport height
+           ============================================================ -->
+      <section class="chapter chapter-education" id="education" aria-labelledby="education-title">
+        <div class="layout">
+          <div class="chapter-header">
+            <p class="chapter-number">02</p>
+            <h2 id="education-title">Education</h2>
+            <p class="chapter-subtitle">Academic Consistency</p>
           </div>
-          <div class="section-body education-dashboard">
-            <article class="dashboard-panel" aria-labelledby="timeline-title">
-              <h3 id="timeline-title">Academic Timeline</h3>
-              <ol class="academic-timeline">
-                <li><span>8th</span></li>
-                <li><span>9th</span></li>
-                <li><span>10th</span></li>
-                <li class="event-marker"><span>COVID Period</span></li>
-                <li><span>11th</span></li>
-                <li><span>12th</span></li>
-                <li><span>Engineering</span></li>
-              </ol>
+
+          <div class="edu-dashboard">
+            <article class="edu-panel" aria-labelledby="school-chart-title">
+              <div class="panel-heading">
+                <h3 id="school-chart-title">School Consistency</h3>
+                <p>Academic milestones documented as continuity markers rather than conventional charts.</p>
+              </div>
+              <div class="school-ruler" data-school-ruler aria-label="School academic ruler"></div>
             </article>
 
-            <article class="dashboard-panel" aria-labelledby="school-title">
-              <h3 id="school-title">School Academic Consistency</h3>
-              <div class="school-chart" aria-label="School percentage consistency with COVID period marker">
-                <div class="covid-marker" aria-hidden="true">
-                  <span>COVID Period</span>
+            <article class="edu-panel" aria-labelledby="grad-chart-title">
+              <div class="panel-heading">
+                <h3 id="grad-chart-title">Graduation</h3>
+                <p>Semester results against university criteria.</p>
+              </div>
+              <div class="grad-scale" data-grad-scale aria-label="Engineering graduation scale"></div>
+              <div class="chart-tooltip" role="status" aria-live="polite" data-chart-tooltip hidden></div>
+              <dl class="grad-summary">
+                <div>
+                  <dt>Current CGPA</dt>
+                  <dd data-cgpa>—</dd>
                 </div>
-                <dl class="school-bars">
-                  <div style="--score: 90">
-                    <dt>8th</dt>
-                    <dd><span>≈ 90%</span></dd>
-                  </div>
-                  <div style="--score: 90">
-                    <dt>9th</dt>
-                    <dd><span>≈ 90%</span></dd>
-                  </div>
-                  <div style="--score: 90.2">
-                    <dt>10th</dt>
-                    <dd><span>90.2%</span></dd>
-                  </div>
-                  <div style="--score: 89">
-                    <dt>11th</dt>
-                    <dd><span>89%</span></dd>
-                  </div>
-                  <div style="--score: 89">
-                    <dt>12th</dt>
-                    <dd><span>89%</span></dd>
-                  </div>
+                <div>
+                  <dt>Highest SGPA</dt>
+                  <dd data-highest-sgpa>—</dd>
+                </div>
+                <div>
+                  <dt>Semesters Above Distinction</dt>
+                  <dd data-semesters-above>—</dd>
+                </div>
+                <div>
+                  <dt>University</dt>
+                  <dd>Savitribai Phule Pune University</dd>
+                </div>
+                <div>
+                  <dt>Branch</dt>
+                  <dd>Electronics &amp; Telecommunication Engineering</dd>
+                </div>
+              </dl>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============================================================
+           SECTION 3 — PROJECT INDEX
+           Black background · Full viewport height
+           ============================================================ -->
+      <section class="chapter chapter-projects" id="projects" aria-labelledby="projects-title">
+        <div class="layout">
+          <div class="chapter-header">
+            <p class="chapter-number">03</p>
+            <h2 id="projects-title">Project Index</h2>
+            <p class="chapter-subtitle">Selected Work</p>
+          </div>
+
+          <div class="project-index">
+            <article class="project-file">
+              <a class="project-preview" href="#" aria-label="Open project 01 documentation">
+                <img src="assets/images/projects/project-1.webp" alt="Project preview" loading="lazy" decoding="async" data-asset-check>
+              </a>
+              <div class="project-body">
+                <div class="project-file-header">
+                  <span class="project-number">PROJECT 01</span>
+                  <span class="project-status">Status · <!-- PROJECT STATUS --></span>
+                </div>
+                <h3 class="project-file-title">Project Title · <!-- PROJECT TITLE --></h3>
+                <p class="project-file-summary"><!-- PROJECT DESCRIPTION --></p>
+                <dl class="project-file-details">
+                  <div><dt>Title</dt><dd><!-- PROJECT TITLE --></dd></div>
+                  <div><dt>Technologies</dt><dd><!-- TECHNOLOGIES --></dd></div>
+                  <div><dt>Problem</dt><dd><!-- PROBLEM --></dd></div>
+                  <div><dt>Future Scope</dt><dd><!-- FUTURE SCOPE --></dd></div>
+                  <div><dt>GitHub</dt><dd><!-- GITHUB --></dd></div>
+                  <div><dt>README</dt><dd><!-- README --></dd></div>
                 </dl>
+                <a class="project-file-link" href="#" aria-label="View project 01 details">View Details →</a>
               </div>
             </article>
 
-            <article class="dashboard-panel" aria-labelledby="graduation-title">
-              <div class="panel-header">
-                <h3 id="graduation-title">Graduation Performance</h3>
-                <p>Benchmark: SPPU First Class with Distinction Threshold · 7.75</p>
+            <article class="project-file">
+              <a class="project-preview" href="#" aria-label="Open project 02 documentation">
+                <img src="assets/images/projects/project-2.webp" alt="Project preview" loading="lazy" decoding="async" data-asset-check>
+              </a>
+              <div class="project-body">
+                <div class="project-file-header">
+                  <span class="project-number">PROJECT 02</span>
+                  <span class="project-status">Status · <!-- PROJECT STATUS --></span>
+                </div>
+                <h3 class="project-file-title">Project Title · <!-- PROJECT TITLE --></h3>
+                <p class="project-file-summary"><!-- PROJECT DESCRIPTION --></p>
+                <dl class="project-file-details">
+                  <div><dt>Title</dt><dd><!-- PROJECT TITLE --></dd></div>
+                  <div><dt>Technologies</dt><dd><!-- TECHNOLOGIES --></dd></div>
+                  <div><dt>Problem</dt><dd><!-- PROBLEM --></dd></div>
+                  <div><dt>Future Scope</dt><dd><!-- FUTURE SCOPE --></dd></div>
+                  <div><dt>GitHub</dt><dd><!-- GITHUB --></dd></div>
+                  <div><dt>README</dt><dd><!-- README --></dd></div>
+                </dl>
+                <a class="project-file-link" href="#" aria-label="View project 02 details">View Details →</a>
               </div>
-              <div class="sgpa-chart-wrap">
-                <svg
-                  class="sgpa-chart"
-                  viewBox="0 0 720 360"
-                  role="img"
-                  aria-labelledby="sgpa-title sgpa-desc"
-                  data-sgpa-chart
-                >
-                  <title id="sgpa-title">Semester SGPA above SPPU distinction benchmark</title>
-                  <desc id="sgpa-desc">Semesters one through six remain above the 7.75 benchmark.</desc>
-                  <g class="chart-grid" aria-hidden="true"></g>
-                  <line class="benchmark-line" data-benchmark-line x1="72" x2="672" y1="0" y2="0"></line>
-                  <text class="benchmark-label" data-benchmark-label x="76" y="0">SPPU First Class with Distinction Threshold · 7.75</text>
-                  <polyline class="sgpa-line" data-sgpa-line points=""></polyline>
-                  <g class="sgpa-points" data-sgpa-points></g>
-                  <g class="chart-axis" aria-hidden="true"></g>
-                </svg>
-                <p class="chart-note">
-                  The graph is designed to show consistency above the university distinction benchmark, not competition
-                  between individual semesters.
-                </p>
-                <div class="chart-tooltip" role="status" aria-live="polite" data-chart-tooltip hidden></div>
+            </article>
+
+            <article class="project-file">
+              <a class="project-preview" href="#" aria-label="Open project 03 documentation">
+                <img src="assets/images/projects/project-3.webp" alt="Project preview" loading="lazy" decoding="async" data-asset-check>
+              </a>
+              <div class="project-body">
+                <div class="project-file-header">
+                  <span class="project-number">PROJECT 03</span>
+                  <span class="project-status">Status · <!-- PROJECT STATUS --></span>
+                </div>
+                <h3 class="project-file-title">Project Title · <!-- PROJECT TITLE --></h3>
+                <p class="project-file-summary"><!-- PROJECT DESCRIPTION --></p>
+                <dl class="project-file-details">
+                  <div><dt>Title</dt><dd><!-- PROJECT TITLE --></dd></div>
+                  <div><dt>Technologies</dt><dd><!-- TECHNOLOGIES --></dd></div>
+                  <div><dt>Problem</dt><dd><!-- PROBLEM --></dd></div>
+                  <div><dt>Future Scope</dt><dd><!-- FUTURE SCOPE --></dd></div>
+                  <div><dt>GitHub</dt><dd><!-- GITHUB --></dd></div>
+                  <div><dt>README</dt><dd><!-- README --></dd></div>
+                </dl>
+                <a class="project-file-link" href="#" aria-label="View project 03 details">View Details →</a>
+              </div>
+            </article>
+
+            <article class="project-file">
+              <a class="project-preview" href="#" aria-label="Open project 04 documentation">
+                <img src="assets/images/projects/project-4.webp" alt="Project preview" loading="lazy" decoding="async" data-asset-check>
+              </a>
+              <div class="project-body">
+                <div class="project-file-header">
+                  <span class="project-number">PROJECT 04</span>
+                  <span class="project-status">Status · <!-- PROJECT STATUS --></span>
+                </div>
+                <h3 class="project-file-title">Project Title · <!-- PROJECT TITLE --></h3>
+                <p class="project-file-summary"><!-- PROJECT DESCRIPTION --></p>
+                <dl class="project-file-details">
+                  <div><dt>Title</dt><dd><!-- PROJECT TITLE --></dd></div>
+                  <div><dt>Technologies</dt><dd><!-- TECHNOLOGIES --></dd></div>
+                  <div><dt>Problem</dt><dd><!-- PROBLEM --></dd></div>
+                  <div><dt>Future Scope</dt><dd><!-- FUTURE SCOPE --></dd></div>
+                  <div><dt>GitHub</dt><dd><!-- GITHUB --></dd></div>
+                  <div><dt>README</dt><dd><!-- README --></dd></div>
+                </dl>
+                <a class="project-file-link" href="#" aria-label="View project 04 details">View Details →</a>
               </div>
             </article>
           </div>
         </div>
       </section>
 
-      <section class="content-section" id="projects" aria-labelledby="projects-title">
-        <div class="layout section-layout">
-          <div class="section-heading">
-            <p class="section-kicker">Projects</p>
-            <h2 id="projects-title">Project work from the resume.</h2>
-          </div>
-          <div class="section-body stack">
-            <article class="entry project-entry">
-              <div>
-                <h3>Resume project details required</h3>
-                <dl class="project-details">
-                  <div><dt>Problem Statement</dt><dd>Resume detail required.</dd></div>
-                  <div><dt>Solution Summary</dt><dd>Resume detail required.</dd></div>
-                  <div><dt>Technology Stack</dt><dd>Resume detail required.</dd></div>
-                  <div><dt>Current Status</dt><dd>Resume detail required.</dd></div>
-                  <div><dt>GitHub</dt><dd>Resume detail required.</dd></div>
-                  <div><dt>README</dt><dd>Resume detail required.</dd></div>
-                  <div><dt>Future Scope</dt><dd>Resume detail required.</dd></div>
-                </dl>
-              </div>
-            </article>
-          </div>
-        </div>
-      </section>
+      <!-- ============================================================
+           REMAINING SECTIONS — UNCHANGED
+           ============================================================ -->
 
-      <section class="content-section" id="skills" aria-labelledby="skills-title">
+      <section class="content-section content-section--orange" id="skills" aria-labelledby="skills-title">
         <div class="layout section-layout">
           <div class="section-heading">
             <p class="section-kicker">Skills</p>
-            <h2 id="skills-title">Categorised engineering capabilities.</h2>
+            <h2 id="skills-title">Selected capabilities.</h2>
           </div>
           <div class="section-body skill-matrix">
-            <article>
-              <h3>Programming</h3>
-              <ul class="tag-list"><li>Resume detail required.</li></ul>
+            <article class="skill-drawer is-open">
+              <button class="skill-drawer-toggle" type="button" aria-expanded="true">
+                <span>Programming</span>
+              </button>
+              <div class="skill-drawer-panel">
+                <ul class="tag-list"><li><!-- SKILLS --></li></ul>
+              </div>
             </article>
-            <article>
-              <h3>Electronics</h3>
-              <ul class="tag-list"><li>Resume detail required.</li></ul>
+            <article class="skill-drawer">
+              <button class="skill-drawer-toggle" type="button" aria-expanded="false">
+                <span>Electronics</span>
+              </button>
+              <div class="skill-drawer-panel">
+                <ul class="tag-list"><li><!-- SKILLS --></li></ul>
+              </div>
             </article>
-            <article>
-              <h3>Networking</h3>
-              <ul class="tag-list"><li>Resume detail required.</li></ul>
+            <article class="skill-drawer">
+              <button class="skill-drawer-toggle" type="button" aria-expanded="false">
+                <span>Networking</span>
+              </button>
+              <div class="skill-drawer-panel">
+                <ul class="tag-list"><li><!-- SKILLS --></li></ul>
+              </div>
             </article>
-            <article>
-              <h3>Cybersecurity</h3>
-              <ul class="tag-list"><li>Resume detail required.</li></ul>
+            <article class="skill-drawer">
+              <button class="skill-drawer-toggle" type="button" aria-expanded="false">
+                <span>Cybersecurity</span>
+              </button>
+              <div class="skill-drawer-panel">
+                <ul class="tag-list"><li><!-- SKILLS --></li></ul>
+              </div>
             </article>
-            <article>
-              <h3>Embedded Systems</h3>
-              <ul class="tag-list"><li>Resume detail required.</li></ul>
+            <article class="skill-drawer">
+              <button class="skill-drawer-toggle" type="button" aria-expanded="false">
+                <span>Embedded Systems</span>
+              </button>
+              <div class="skill-drawer-panel">
+                <ul class="tag-list"><li><!-- SKILLS --></li></ul>
+              </div>
             </article>
-            <article>
-              <h3>Database</h3>
-              <ul class="tag-list"><li>Resume detail required.</li></ul>
+            <article class="skill-drawer">
+              <button class="skill-drawer-toggle" type="button" aria-expanded="false">
+                <span>Database</span>
+              </button>
+              <div class="skill-drawer-panel">
+                <ul class="tag-list"><li><!-- SKILLS --></li></ul>
+              </div>
             </article>
-            <article>
-              <h3>Tools</h3>
-              <ul class="tag-list"><li>HTML</li><li>CSS</li><li>Vanilla JavaScript</li></ul>
+            <article class="skill-drawer">
+              <button class="skill-drawer-toggle" type="button" aria-expanded="false">
+                <span>Tools</span>
+              </button>
+              <div class="skill-drawer-panel">
+                <ul class="tag-list"><li>HTML</li><li>CSS</li><li>Vanilla JavaScript</li></ul>
+              </div>
             </article>
-            <article>
-              <h3>Version Control</h3>
-              <ul class="tag-list"><li>GitHub</li></ul>
+            <article class="skill-drawer">
+              <button class="skill-drawer-toggle" type="button" aria-expanded="false">
+                <span>Version Control</span>
+              </button>
+              <div class="skill-drawer-panel">
+                <ul class="tag-list"><li>GitHub</li></ul>
+              </div>
             </article>
-            <article>
-              <h3>Project Management</h3>
-              <ul class="tag-list"><li>Resume detail required.</li></ul>
+            <article class="skill-drawer">
+              <button class="skill-drawer-toggle" type="button" aria-expanded="false">
+                <span>Project Management</span>
+              </button>
+              <div class="skill-drawer-panel">
+                <ul class="tag-list"><li><!-- ACHIEVEMENTS --></li></ul>
+              </div>
             </article>
+          </div>
+          <div class="section-body stack editable-notes">
+            <p class="editable-note"><strong>Certificates:</strong> <!-- CERTIFICATES --></p>
+            <p class="editable-note"><strong>Internship:</strong> <!-- INTERNSHIP --></p>
+            <p class="editable-note"><strong>Achievements:</strong> <!-- ACHIEVEMENTS --></p>
           </div>
         </div>
       </section>
 
-      <section class="content-section" id="blog" aria-labelledby="blog-title">
+      <section class="content-section content-section--white" id="blog" aria-labelledby="blog-title">
         <div class="layout section-layout">
           <div class="section-heading">
             <p class="section-kicker">Blog</p>
-            <h2 id="blog-title">Engineering articles coming soon.</h2>
+            <h2 id="blog-title">Notes and writing coming soon.</h2>
           </div>
           <div class="section-body stack">
             <article class="entry">
               <div>
                 <h3>How I Think About Academic Consistency</h3>
-                <p>Coming Soon · A note on long-term performance, resilience, and honest measurement.</p>
+                <p>Coming Soon · <!-- BLOG POST -->.</p>
               </div>
             </article>
             <article class="entry">
               <div>
-                <h3>Building a Portfolio Like an Engineering Product</h3>
-                <p>Coming Soon · Why the site starts as a resume and evolves as a journal.</p>
+                <h3>Building a Portfolio Like a Reference Site</h3>
+                <p>Coming Soon · <!-- BLOG POST -->.</p>
               </div>
             </article>
             <article class="entry">
               <div>
                 <h3>Systems, Security, and Embedded Curiosity</h3>
-                <p>Coming Soon · A research log for technical interests as they mature into projects.</p>
+                <p>Coming Soon · <!-- BLOG POST -->.</p>
               </div>
             </article>
           </div>
         </div>
       </section>
 
-      <section class="content-section" id="research" aria-labelledby="research-title">
+      <section class="content-section content-section--black" id="research" aria-labelledby="research-title">
         <div class="layout section-layout">
           <div class="section-heading">
             <p class="section-kicker">Research</p>
-            <h2 id="research-title">Technical interests to investigate.</h2>
+            <h2 id="research-title">Research themes to revisit.</h2>
           </div>
           <div class="section-body">
             <ul class="research-list">
               <li>Networking fundamentals and real-world system reliability.</li>
               <li>Cybersecurity as disciplined threat modelling, not theatre.</li>
-              <li>Embedded systems and the engineering tradeoffs of constrained hardware.</li>
-              <li>Engineering writing as a tool for clearer product judgment.</li>
+              <li>Embedded systems and the tradeoffs of constrained hardware.</li>
+              <li>Clear writing as a tool for better judgment.</li>
             </ul>
           </div>
         </div>
       </section>
 
-      <section class="content-section contact-section" id="contact" aria-labelledby="contact-title">
+      <section class="content-section content-section--orange contact-section" id="contact" aria-labelledby="contact-title">
         <div class="layout section-layout">
           <div class="section-heading">
             <p class="section-kicker">Contact</p>
-            <h2 id="contact-title">Functional contact routes.</h2>
+            <h2 id="contact-title">Contact routes.</h2>
           </div>
           <div class="section-body">
-            <p>Contact details are wired for real links and should be replaced with the exact resume values.</p>
+            <p>Editable contact routes for the public release version.</p>
             <ul class="contact-list" aria-label="Contact links">
-              <li><a href="mailto:resume-email-required@example.com">Email · Resume detail required</a></li>
-              <li><a href="tel:+0000000000">Phone · Resume detail required</a></li>
-              <li><a href="https://www.linkedin.com/">LinkedIn · Resume detail required</a></li>
-              <li><a href="https://github.com/Sakhaalex">GitHub · Sakhaalex</a></li>
-              <li><a href="assets/resume.pdf">Resume Download · Add resume.pdf</a></li>
+              <li><a class="contact-action" href="mailto:alexvsakha@gmail.com">Email · <!-- EMAIL --></a></li>
+              <li><a class="contact-action" href="tel:+919112088600">Phone · <!-- PHONE --></a></li>
+              <li><a class="contact-action" href="https://www.linkedin.com/">LinkedIn · <!-- LINKEDIN --></a></li>
+              <li><a class="contact-action" href="https://github.com/Sakhaalex">GitHub · <!-- GITHUB --></a></li>
+              <li><a class="contact-action" href="assets/resume/resume.pdf" data-resume-link>Resume · <!-- RESUME --></a></li>
             </ul>
           </div>
         </div>
@@ -332,7 +436,8 @@
 
     <footer class="site-footer">
       <div class="layout footer-layout">
-        <p>&copy; <span data-current-year>2026</span> Alex Virendra Sakha. Built using HTML CSS JavaScript. GitHub Pages. No frameworks.</p>
+        <p>&copy; <span data-current-year>2026</span> Alex Virendra Sakha. Built using HTML, CSS, and JavaScript. GitHub Pages. No frameworks.</p>
+        <a class="footer-link" href="walkthrough.html">Website Setup Guide</a>
       </div>
     </footer>
   </body>
